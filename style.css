@@ -1,24 +1,85 @@
-/* Set the background color of the entire page to black */
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styling */
 body {
-  background-color: black;
-  color: white; /* Change text color to white for better contrast */
-  font-family: Arial, sans-serif; /* Optional: set font for better readability */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #f4f4f4; /* Light text color for dark background */
+    background-color: #121212; /* Dark background */
+    padding: 20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: white; /* Optional: set header text color to white */
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
+/* Section styling */
+section {
+    margin-bottom: 30px;
+}
+
+/* Links */
 a {
-  color: #1E90FF; /* Optional: style links */
+    color: #1a73e8; /* Blue color for links */
+    text-decoration: none;
 }
 
-code {
-  background-color: #333333; /* Optional: style inline code */
-  color: white;
+a:hover {
+    text-decoration: underline;
 }
 
-pre {
-  background-color: #333333; /* Optional: style code blocks */
-  color: white;
+/* List styling */
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+/* Badge images */
+img {
+    margin: 5px;
+}
+
+/* Adjusting for dark theme on badges and icons */
+img[src*="badge"] {
+    filter: brightness(0.8);
+}
+
+/* Styling for headings */
+h1, h2, h3 {
+    color: #f4f4f4; /* Light color for headings */
+}
+
+/* Styling for section headers */
+h2 {
+    border-bottom: 2px solid #444; /* Subtle divider for sections */
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Footer or bottom section */
+footer {
+    text-align: center;
+    color: #bbb;
+    margin-top: 20px;
+}
+
+/* Add a subtle hover effect for images (e.g., profile picture) */
+img:hover {
+    opacity: 0.9;
+}
+
+/* Links inside the footer */
+footer a {
+    color: #1a73e8; /* Blue links in footer */
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
