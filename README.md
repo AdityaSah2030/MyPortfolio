@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="styles.css">
+
 <div style="position: relative;">
   <img src="dp1.jpg" alt="Circular Image" style="border-radius: 50%; width: 100px; height: 100px; position: absolute; top: 0; right: 0;">
 </div>
