@@ -1,14 +1,3 @@
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Bridging Technology and Business for Impact">
-  
-  <!-- Open Graph meta tags for social media -->
-  <meta property="og:title" content="Aditya Sah's Portfolio">
-  <meta property="og:description" content="Bridging Technology and Business for Impact">
-  <meta property="og:image" content="https://adityasah2030.github.io/dp1.jpg">
-  <meta property="og:url" content="https://adityasah2030.github.io/">
-</head>
-
 <div style="position: relative;">
   <img src="dp1.jpg" alt="Circular Image" style="border-radius: 50%; width: 100px; height: 100px; position: absolute; top: 0; right: 0;">
 </div>
