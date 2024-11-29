@@ -1,0 +1,24 @@
+/* Set the background color of the entire page to black */
+body {
+  background-color: black;
+  color: white; /* Change text color to white for better contrast */
+  font-family: Arial, sans-serif; /* Optional: set font for better readability */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: white; /* Optional: set header text color to white */
+}
+
+a {
+  color: #1E90FF; /* Optional: style links */
+}
+
+code {
+  background-color: #333333; /* Optional: style inline code */
+  color: white;
+}
+
+pre {
+  background-color: #333333; /* Optional: style code blocks */
+  color: white;
+}
