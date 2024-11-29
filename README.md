@@ -7,7 +7,7 @@
 
 ## 🚀 About Me
 - 🌱 **Currently Learning**: Advanced data handling and visualization in Python using **NumPy**, **Pandas**, and **Matplotlib**.  
-- 👯 **Looking to Collaborate On**: Projects in **Python**, **JavaScript**, and AI/ML applications.  
+- 👯 **Looking to Collaborate On**: Projects in **Python**, **Java**, and AI/ML applications.  
 - 💬 **Ask Me About**: Artificial Intelligence, Media, Finance, Startups, and Business.  
 - 📫 **Reach Me At**: [adityasah2030@gmail.com](mailto:adityasah2030@gmail.com)  
 
@@ -41,7 +41,7 @@
 ### 🔗 [Project 4 - Mini Projects](https://github.com/AdityaSah2030/Mini-Projects.git)
 **Tech Stack**: Python  
 *1. To-Do List*  
-*2. BMI Calculator*  
+*2. BMI-BMR Calculator*  
 *3. Unit Converter*  
 
 ---
