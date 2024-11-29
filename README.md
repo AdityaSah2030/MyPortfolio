@@ -1,3 +1,7 @@
+<meta property="og:title" content="Aditya Sah's Portfolio">
+<meta property="og:description" content="Bridging Technology and Business for Impact">
+<meta property="og:image" content="dp1.jpg">
+
 <div style="position: relative;">
   <img src="dp1.jpg" alt="Circular Image" style="border-radius: 50%; width: 100px; height: 100px; position: absolute; top: 0; right: 0;">
 </div>
