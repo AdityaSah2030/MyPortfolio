@@ -1,5 +1,9 @@
+<div style="position: relative;">
+  <img src="dp1.jpg" alt="Circular Image" style="border-radius: 50%; width: 100px; height: 100px; position: absolute; top: 0; right: 0;">
+</div>
+
 # Hi folks! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
-# I'm **Aditya Sah**
+# I'm **Aditya Sah**  
 ### A Passionate Tech Enthusiast Based in India 🇮🇳
 
 
