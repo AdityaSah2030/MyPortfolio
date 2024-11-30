@@ -43,10 +43,12 @@
 *A web application that keeps a journal about different topics user's have been learning about.*
 
 ### 🔗 [Project 4 - Mini Projects](https://github.com/AdityaSah2030/Mini-Projects.git)
-**Tech Stack**: Python  
+**Tech Stack**: Python   
 *1. To-Do List*  
 *2. BMI-BMR Calculator*  
-*3. Unit Converter*  
+*3. Youtube Manager*  
+*4. Handling APIs*  
+*5. Unit Converter*  
 
 ---
 
