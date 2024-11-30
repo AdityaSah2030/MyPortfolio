@@ -10,10 +10,10 @@
 ---
 
 ## 🚀 About Me
-- 🌱 **Currently Learning**: Advanced data handling and visualization in Python using **NumPy**, **Pandas**, and **Matplotlib**.  
-- 👯 **Looking to Collaborate On**: Projects in **Python**, **Java**, and AI/ML applications.  
-- 💬 **Ask Me About**: Artificial Intelligence, Programming, Technology, Media, Finance, Startup, and Business.  
-- 📫 **Reach Me At**: [adityasah2030@gmail.com](mailto:adityasah2030@gmail.com)  
+- **Currently Learning**: Advanced data handling and visualization in Python using **NumPy**, **Pandas**, and **Matplotlib**.  
+- **Looking to Collaborate On**: Projects in **Python**, **Java**, and AI/ML applications.  
+- **Ask Me About**: Artificial Intelligence, Programming, Technology, Media, Finance, Startup, and Business.  
+- **Reach Me At**: [adityasah2030@gmail.com](mailto:adityasah2030@gmail.com)  
 
 ---
 
