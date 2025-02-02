@@ -75,7 +75,7 @@
 
 ---
 
-**Copyright © 2024 Aditya Sah. All rights reserved.**  
+**Copyright © 2025 Aditya Sah. All rights reserved.**  
 
 *"I believe in the power of technology to bridge gaps and create meaningful solutions!"*
 
