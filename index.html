@@ -493,66 +493,12 @@
             opacity: 1;
         }
         
-        /* Contact Form Styles */
-        .contact-form {
-            background-color: var(--card-bg);
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            margin-top: 30px;
-            text-align: left;
-        }
-        
-        .form-group {
-            margin-bottom: 20px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-            color: var(--light);
-        }
-        
-        .form-control {
-            width: 100%;
-            padding: 12px 15px;
-            border-radius: 8px;
-            border: 1px solid rgba(138, 43, 226, 0.3);
-            background-color: rgba(15, 15, 26, 0.5);
-            color: var(--light);
-            font-family: inherit;
-            transition: all 0.3s ease;
-        }
-        
-        .form-control:focus {
-            outline: none;
-            border-color: var(--primary);
-            box-shadow: 0 0 10px rgba(138, 43, 226, 0.3);
-        }
-        
-        textarea.form-control {
-            min-height: 150px;
-            resize: vertical;
-        }
-        
-        .submit-btn {
-            display: inline-block;
-            background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
-            color: var(--light);
-            padding: 12px 30px;
-            border-radius: 30px;
-            font-weight: 600;
-            transition: transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 4px 15px rgba(138, 43, 226, 0.3);
-            border: none;
-            cursor: pointer;
-            width: 100%;
-        }
-        
-        .submit-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(138, 43, 226, 0.5);
+        /* Quote styles */
+        .quote {
+            font-style: italic;
+            color: var(--text-secondary);
+            margin: 30px 0;
+            text-align: center;
         }
         
         /* Footer */
@@ -561,6 +507,16 @@
             color: var(--text-secondary);
             padding: 25px 0;
             text-align: center;
+        }
+        
+        .copyright {
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        
+        .tagline {
+            font-style: italic;
+            opacity: 0.8;
         }
         
         .back-to-top {
@@ -590,28 +546,6 @@
         
         .back-to-top:hover {
             background-color: var(--accent);
-        }
-        
-        /* Form status message */
-        .form-status {
-            padding: 10px;
-            border-radius: 8px;
-            margin-top: 15px;
-            display: none;
-        }
-        
-        .form-status.success {
-            background-color: rgba(39, 174, 96, 0.2);
-            color: #2ecc71;
-            border: 1px solid #27ae60;
-            display: block;
-        }
-        
-        .form-status.error {
-            background-color: rgba(231, 76, 60, 0.2);
-            color: #e74c3c;
-            border: 1px solid #c0392b;
-            display: block;
         }
         
         /* Responsive design */
@@ -902,6 +836,54 @@
                     </a>
                 </div>
                 
-                <!-- Contact Form -->
-                <div class="contact-form">
-                    <form id="contactForm">
+                <!-- Quote instead of contact form -->
+                <div class="quote">
+                    "I believe in the power of technology to bridge gaps and create meaningful solutions!"
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="copyright"><strong>Copyright © 2025 Aditya Sah. All rights reserved.</strong></p>
+            <p class="tagline"><em>"I believe in the power of technology to bridge gaps and create meaningful solutions!"</em></p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- JavaScript for navbar toggle and back-to-top button -->
+    <script>
+        // Toggle navigation menu
+        const navToggle = document.querySelector('.nav-toggle');
+        const nav = document.querySelector('nav');
+        
+        navToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+        
+        // Back to top button
+        const backToTop = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+        
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
