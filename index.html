@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Sah - Tech Enthusiast</title>
+    <style>
+        /* Base styles */
+        :root {
+            --primary: #4a6baf;
+            --secondary: #f0f2f5;
+            --dark: #333;
+            --light: #fff;
+            --accent: #ff5722;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--secondary);
+        }
+        
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        a:hover {
+            color: var(--accent);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--primary);
+            color: var(--light);
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo h1 {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: var(--light);
+            font-weight: 500;
+        }
+        
+        /* Hero section */
+        .hero {
+            display: flex;
+            align-items: center;
+            padding: 80px 0;
+            background-color: var(--light);
+        }
+        
+        .hero-content {
+            flex: 1;
+            padding-right: 50px;
+        }
+        
+        .hero img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--primary);
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: var(--dark);
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--light);
+            padding: 12px 24px;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: var(--accent);
+            color: var(--light);
+        }
+        
+        /* About section */
+        .about {
+            padding: 80px 0;
+            background-color: var(--secondary);
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            text-align: center;
+            color: var(--primary);
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent);
+            margin: 10px auto;
+        }
+        
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .about-card {
+            flex: 0 0 calc(33.333% - 20px);
+            background-color: var(--light);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .about-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .about-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+        
+        .about-card ul {
+            list-style-position: inside;
+            margin-bottom: 15px;
+        }
+        
+        /* Skills section */
+        .skills {
+            padding: 80px 0;
+            background-color: var(--light);
+        }
+        
+        .skills-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .skill-category {
+            flex: 0 0 calc(50% - 20px);
+            margin-bottom: 40px;
+        }
+        
+        .skill-category h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        
+        .skill-badge {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--light);
+            padding: 5px 10px;
+            border-radius: 3px;
+            margin: 5px 5px 5px 0;
+            font-size: 0.9rem;
+        }
+        
+        /* Projects section */
+        .projects {
+            padding: 80px 0;
+            background-color: var(--secondary);
+        }
+        
+        .projects-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .project-card {
+            flex: 0 0 calc(50% - 20px);
+            background-color: var(--light);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .project-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+        
+        .project-card p {
+            margin-bottom: 15px;
+        }
+        
+        .tech-stack {
+            margin-bottom: 15px;
+            font-style: italic;
+            color: var(--accent);
+        }
+        
+        /* Contact section */
+        .contact {
+            padding: 80px 0;
+            background-color: var(--light);
+        }
+        
+        .contact-content {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .social-link {
+            display: inline-block;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            transition: transform 0.3s;
+        }
+        
+        .social-link:hover {
+            transform: translateY(-5px);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: var(--light);
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .hero-content {
+                padding-right: 0;
+                margin-bottom: 30px;
+            }
+            
+            .about-card,
+            .skill-category,
+            .project-card {
+                flex: 0 0 100%;
+            }
+            
+            .header-content {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <h1>Aditya Sah</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>A Passionate Tech Enthusiast Based in India 🇮🇳</h2>
+                <p>"I believe in the power of technology to bridge gaps and create meaningful solutions!"</p>
+                <a href="#contact" class="btn">Get In Touch</a>
+            </div>
+            <img src="dp1.jpg" alt="Aditya Sah">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-card">
+                    <h3>🌱 Currently Learning</h3>
+                    <ul>
+                        <li>Data Structures & Algorithms</li>
+                        <li>Machine Learning Model Training</li>
+                        <li>Advanced data handling and visualization in Python</li>
+                    </ul>
+                </div>
+                <div class="about-card">
+                    <h3>👯 Looking to Collaborate On</h3>
+                    <ul>
+                        <li>Projects in Python, Java</li>
+                        <li>AI/ML applications</li>
+                        <li>Embedded systems</li>
+                    </ul>
+                </div>
+                <div class="about-card">
+                    <h3>💬 Ask Me About</h3>
+                    <ul>
+                        <li>Artificial Intelligence</li>
+                        <li>Programming & Technology</li>
+                        <li>Media, Finance, Startups, and Business</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div>
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">Java</span>
+                        <span class="skill-badge">C++</span>
+                        <span class="skill-badge">C</span>
+                        <span class="skill-badge">HTML</span>
+                        <span class="skill-badge">CSS</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">Bash</span>
+                        <span class="skill-badge">Markdown</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div>
+                        <span class="skill-badge">PyTorch</span>
+                        <span class="skill-badge">Jupyter</span>
+                        <span class="skill-badge">NumPy</span>
+                        <span class="skill-badge">Pandas</span>
+                        <span class="skill-badge">Matplotlib</span>
+                        <span class="skill-badge">Django</span>
+                        <span class="skill-badge">Anaconda</span>
+                        <span class="skill-badge">Tkinter</span>
+                        <span class="skill-badge">Plotly</span>
+                        <span class="skill-badge">Pygame</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps Tools</h3>
+                    <div>
+                        <span class="skill-badge">Git</span>
+                        <span class="skill-badge">Docker</span>
+                        <span class="skill-badge">Jenkins</span>
+                        <span class="skill-badge">Windows Terminal</span>
+                        <span class="skill-badge">CMD</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases & Cloud</h3>
+                    <div>
+                        <span class="skill-badge">MySQL</span>
+                        <span class="skill-badge">MongoDB</span>
+                        <span class="skill-badge">AWS</span>
+                        <span class="skill-badge">Microsoft Azure</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-content">
+                <div class="project-card">
+                    <h3>Attendance System</h3>
+                    <p class="tech-stack">Tech Stack: Python, Tkinter, and Excel Automation</p>
+                    <p>A GUI-based system that creates class Excel sheets for recording attendance and updates them in the backend.</p>
+                    <a href="https://github.com/AdityaSah2030/Attendance-System.git" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Alien Invasion Game</h3>
+                    <p class="tech-stack">Tech Stack: Python and Pygame</p>
+                    <p>Defend against an alien fleet as the game ramps up in speed and difficulty.</p>
+                    <a href="https://github.com/AdityaSah2030/Alien-Invasion.git" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Data Visualization</h3>
+                    <p class="tech-stack">Tech Stack: Python, Matplotlib, and Plotly</p>
+                    <p>An application that visualizes data extracted from online sources.</p>
+                    <a href="https://github.com/AdityaSah2030/Data-Visualization.git" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Mini Projects Collection</h3>
+                    <p class="tech-stack">Tech Stack: Python</p>
+                    <p>Collection of smaller projects including To-Do List, BMI-BMR Calculator, YouTube Manager, API Handling, Unit Converter, and GUI Notepad.</p>
+                    <a href="https://github.com/AdityaSah2030/Mini-Projects.git" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>Feel free to reach out to me for collaboration or any questions.</p>
+                <p>Email: <a href="mailto:adityasah2030@gmail.com">adityasah2030@gmail.com</a></p>
+                
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/adityasah2030" class="social-link">LinkedIn</a>
+                    <a href="https://www.github.com/AdityaSah2030" class="social-link">GitHub</a>
+                    <a href="https://twitter.com/adityasah2030" class="social-link">Twitter</a>
+                    <a href="http://www.instagram.com/adityasah2030" class="social-link">Instagram</a>
+                    <a href="https://discord.com/users/adityasah2030" class="social-link">Discord</a>
+                    <a href="https://t.me/adityasah2030" class="social-link">Telegram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Copyright © 2025 Aditya Sah. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
