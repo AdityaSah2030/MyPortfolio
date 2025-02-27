@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aditya Sah - Tech Enthusiast</title>
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* Base styles with dark violet theme */
         :root {
@@ -449,6 +451,7 @@
             flex-wrap: wrap;
             gap: 15px;
             margin-top: 40px;
+            margin-bottom: 40px;
         }
         
         .social-link {
@@ -490,6 +493,68 @@
             opacity: 1;
         }
         
+        /* Contact Form Styles */
+        .contact-form {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin-top: 30px;
+            text-align: left;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--light);
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: 8px;
+            border: 1px solid rgba(138, 43, 226, 0.3);
+            background-color: rgba(15, 15, 26, 0.5);
+            color: var(--light);
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 10px rgba(138, 43, 226, 0.3);
+        }
+        
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            display: inline-block;
+            background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+            color: var(--light);
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(138, 43, 226, 0.3);
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(138, 43, 226, 0.5);
+        }
+        
         /* Footer */
         footer {
             background-color: var(--dark);
@@ -525,6 +590,28 @@
         
         .back-to-top:hover {
             background-color: var(--accent);
+        }
+        
+        /* Form status message */
+        .form-status {
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 15px;
+            display: none;
+        }
+        
+        .form-status.success {
+            background-color: rgba(39, 174, 96, 0.2);
+            color: #2ecc71;
+            border: 1px solid #27ae60;
+            display: block;
+        }
+        
+        .form-status.error {
+            background-color: rgba(231, 76, 60, 0.2);
+            color: #e74c3c;
+            border: 1px solid #c0392b;
+            display: block;
         }
         
         /* Responsive design */
@@ -795,80 +882,26 @@
                 <p>Email: <a href="mailto:adityasah2030@gmail.com">adityasah2030@gmail.com</a></p>
                 
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/adityasah2030" class="social-link" title="LinkedIn">in</a>
-                    <a href="https://www.github.com/AdityaSah2030" class="social-link" title="GitHub">gh</a>
-                    <a href="https://twitter.com/adityasah2030" class="social-link" title="Twitter">X</a>
-                    <a href="http://www.instagram.com/adityasah2030" class="social-link" title="Instagram">ig</a>
-                    <a href="https://discord.com/users/adityasah2030" class="social-link" title="Discord">dc</a>
-                    <a href="https://t.me/adityasah2030" class="social-link" title="Telegram">tg</a>
+                    <a href="https://www.linkedin.com/in/adityasah2030" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.github.com/AdityaSah2030" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/adityasah2030" class="social-link" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="http://www.instagram.com/adityasah2030" class="social-link" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://discord.com/users/adityasah2030" class="social-link" title="Discord">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="https://t.me/adityasah2030" class="social-link" title="Telegram">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>Copyright © 2025 Aditya Sah. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Back to top button -->
-    <div class="back-to-top">↑</div>
-
-    <!-- JavaScript for interactivity -->
-    <script>
-        // Toggle navigation
-        const navToggle = document.querySelector('.nav-toggle');
-        const nav = document.querySelector('nav');
-        
-        navToggle.addEventListener('click', () => {
-            nav.classList.toggle('active');
-        });
-        
-        // Close menu when clicking a nav link
-        const navLinks = document.querySelectorAll('nav ul li a');
-        
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                nav.classList.remove('active');
-            });
-        });
-        
-        // Back to top button
-        const backToTopButton = document.querySelector('.back-to-top');
-        
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-                backToTopButton.classList.add('show');
-            } else {
-                backToTopButton.classList.remove('show');
-            }
-        });
-        
-        backToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
                 
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 70,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
-</body>
-</html>
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form id="contactForm">
