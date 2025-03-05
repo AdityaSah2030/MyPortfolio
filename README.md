@@ -59,7 +59,7 @@
 - Unit Converter  
 - GUI Notepad
 
-### 🔗 [Arduino Workshop: Line Follower Robot](https://github.com/AdityaSah2030/Line-Follower-Robot.git)
+### 🔗 [Arduino Workshop: Line Follower Robot](https://github.com/AdityaSah2030/ArduinoWorkshop)
 **Tech Stack**: Arduino, C/C++  
 *A project built during an Arduino workshop featuring a line follower robot. It uses infrared sensors to detect the line and motor control algorithms for autonomous navigation.*
 
