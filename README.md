@@ -4,6 +4,10 @@
 
 ---
 
+### *"I believe in the power of technology to bridge gaps and create meaningful solutions!"*
+
+---
+
 ## 🚀 About Me
 - 🌱 **Currently Learning**: Data Structures & Algorithms, and Machine Learning Model Training.
 - 👯 **Looking to Collaborate On**: Projects in Python, Java, AI/ML applications, and embedded systems.
@@ -87,5 +91,3 @@
 
 **Copyright ©  
 2025 Aditya Sah. All rights reserved.**
-
-*"I believe in the power of technology to bridge gaps and create meaningful solutions!"*
