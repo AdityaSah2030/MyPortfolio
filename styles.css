@@ -169,33 +169,39 @@ nav ul li a:hover::after {
 }
 
 .hero-image {
-    flex: 0 0 350px;
+    flex: 0 0 550px;
     position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 80px;
 }
 
 .hero-image-card {
-    width: 300px;
-    height: 400px;
+    width: 500px;
+    height: calc(100vh - 80px);
     border-radius: 15px;
     overflow: hidden;
     position: relative;
-    background-color: var(--card-bg);
-    padding: 4px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid rgba(138, 43, 226, 0.3);
+    border: none;
 }
 
 .hero-image-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(138, 43, 226, 0.3);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(138, 43, 226, 0.2);
 }
 
 .hero-image-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 12px;
+    object-position: center top;
+    border-radius: 15px;
 }
 
 .hero h2 {
@@ -579,12 +585,13 @@ footer {
     }
     
     .hero-image {
-        flex: 0 0 280px;
+        flex: 0 0 400px;
+        height: 80vh;
     }
     
     .hero-image-card {
-        width: 250px;
-        height: 330px;
+        width: 350px;
+        height: calc(80vh - 80px);
     }
 }
 
@@ -644,11 +651,13 @@ footer {
     
     .hero-image {
         flex: none;
+        height: 60vh;
+        margin-bottom: 20px;
     }
     
     .hero-image-card {
-        width: 220px;
-        height: 290px;
+        width: 280px;
+        height: 50vh;
     }
     
     section {
@@ -666,8 +675,8 @@ footer {
     }
     
     .hero-image-card {
-        width: 200px;
-        height: 270px;
+        width: 250px;
+        height: 45vh;
     }
     
     .about-card, 
