@@ -232,12 +232,32 @@ nav ul li a:hover::after {
     font-weight: 600;
     transition: transform 0.3s, box-shadow 0.3s;
     box-shadow: 0 4px 15px rgba(138, 43, 226, 0.3);
+    text-decoration: none;
 }
 
 .btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(138, 43, 226, 0.5);
     color: var(--light);
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary-light);
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    color: var(--light);
+    border-color: var(--primary);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 /* About section */
@@ -632,33 +652,54 @@ footer {
     }
     
     .hero-container {
-        flex-direction: column-reverse;
+        flex-direction: column;
         text-align: center;
+        align-items: center;
+        padding-top: 40px;
     }
     
     .hero-content {
         padding-right: 0;
-        margin-top: 40px;
-    }
-    
-    .hero h2 {
-        font-size: 2.2rem;
-    }
-    
-    .hero p {
-        margin-left: auto;
-        margin-right: auto;
+        order: 1;
     }
     
     .hero-image {
         flex: none;
         height: 60vh;
         margin-bottom: 20px;
+        order: 2;
     }
     
     .hero-image-card {
         width: 280px;
         height: 50vh;
+    }
+    
+    .hero h2 {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+    }
+    
+    .hero p {
+        background-color: var(--card-bg);
+        border-radius: 15px;
+        padding: 20px;
+        margin: 20px auto 30px;
+        max-width: 90%;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(138, 43, 226, 0.2);
+        order: 3;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+        gap: 15px;
+        order: 4;
+    }
+    
+    .btn {
+        min-width: 140px;
+        text-align: center;
     }
     
     section {
@@ -673,11 +714,34 @@ footer {
     
     .hero h2 {
         font-size: 1.8rem;
+        margin-bottom: 12px;
     }
     
     .hero-image-card {
         width: 250px;
         height: 45vh;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+        margin: 15px auto 25px;
+        padding: 18px;
+        background-color: var(--card-bg);
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(138, 43, 226, 0.2);
+        max-width: 95%;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .btn {
+        min-width: 120px;
+        padding: 12px 20px;
+        font-size: 0.9rem;
     }
     
     .about-card, 
