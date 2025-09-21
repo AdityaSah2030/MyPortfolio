@@ -184,16 +184,16 @@ nav ul li a:hover::after {
     border-radius: 15px;
     overflow: hidden;
     position: relative;
-    background: transparent;
+    background: none;
     padding: 0;
     box-shadow: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, filter 0.3s ease;
     border: none;
 }
 
 .hero-image-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(138, 43, 226, 0.2);
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 20px rgba(138, 43, 226, 0.6)) drop-shadow(0 0 40px rgba(138, 43, 226, 0.4));
 }
 
 .hero-image-card img {
@@ -202,6 +202,7 @@ nav ul li a:hover::after {
     object-fit: cover;
     object-position: center top;
     border-radius: 15px;
+    transition: transform 0.3s ease;
 }
 
 .hero h2 {
