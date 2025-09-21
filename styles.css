@@ -301,45 +301,70 @@ nav ul li a:hover::after {
 
 .skills-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
     position: relative;
     z-index: 1;
 }
 
 .skill-category {
-    margin-bottom: 40px;
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: fit-content;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(138, 43, 226, 0.2);
 }
 
 .skill-category h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 20px;
     color: var(--primary-light);
     display: flex;
     align-items: center;
+    border-bottom: 2px solid rgba(138, 43, 226, 0.3);
+    padding-bottom: 10px;
 }
 
 .skill-category h3::before {
     content: '⚡';
     margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+    margin-top: 5px;
 }
 
 .skill-badge {
-    display: inline-block;
-    background-color: var(--card-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(138, 43, 226, 0.1);
     color: var(--light);
-    padding: 8px 15px;
-    border-radius: 20px;
-    margin: 5px 5px 5px 0;
-    font-size: 0.9rem;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
     transition: all 0.3s ease;
     border: 1px solid rgba(138, 43, 226, 0.3);
+    text-align: center;
+    min-height: 40px;
 }
 
 .skill-badge:hover {
     background-color: var(--primary);
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.4);
+    border-color: var(--primary-light);
 }
 
 /* Projects section */
@@ -625,8 +650,27 @@ footer {
         grid-template-columns: 1fr;
     }
     
+    .skills-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .skill-category {
+        padding: 20px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 8px;
+    }
+    
     .skill-badge {
-        font-size: 0.8rem;
-        padding: 6px 12px;
+        font-size: 0.75rem;
+        padding: 8px 10px;
+        min-height: 36px;
+    }
+    
+    .skill-category h3 {
+        font-size: 1.1rem;
     }
 }
