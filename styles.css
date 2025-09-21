@@ -169,17 +169,33 @@ nav ul li a:hover::after {
 }
 
 .hero-image {
-    flex: 0 0 300px;
+    flex: 0 0 350px;
     position: relative;
 }
 
-.hero-image img {
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
+.hero-image-card {
+    width: 300px;
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    background-color: var(--card-bg);
+    padding: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(138, 43, 226, 0.3);
+}
+
+.hero-image-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(138, 43, 226, 0.3);
+}
+
+.hero-image-card img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border: 5px solid var(--primary);
-    box-shadow: 0 0 25px rgba(138, 43, 226, 0.5);
+    border-radius: 12px;
 }
 
 .hero h2 {
@@ -562,9 +578,13 @@ footer {
         font-size: 2.5rem;
     }
     
-    .hero-image img {
-        width: 240px;
-        height: 240px;
+    .hero-image {
+        flex: 0 0 280px;
+    }
+    
+    .hero-image-card {
+        width: 250px;
+        height: 330px;
     }
 }
 
@@ -622,6 +642,15 @@ footer {
         margin-right: auto;
     }
     
+    .hero-image {
+        flex: none;
+    }
+    
+    .hero-image-card {
+        width: 220px;
+        height: 290px;
+    }
+    
     section {
         padding: 60px 0;
     }
@@ -636,9 +665,9 @@ footer {
         font-size: 1.8rem;
     }
     
-    .hero-image img {
+    .hero-image-card {
         width: 200px;
-        height: 200px;
+        height: 270px;
     }
     
     .about-card, 
