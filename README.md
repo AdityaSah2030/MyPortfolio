@@ -22,10 +22,10 @@
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#) [![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?logo=openjdk&logoColor=white)](#) [![C++](https://img.shields.io/badge/C++-%2300599C.svg?logo=c%2B%2B&logoColor=white)](#) [![C](https://img.shields.io/badge/C-00599C?logo=c&logoColor=white)](#) [![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](#) [![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=fff)](#) [![Markdown](https://img.shields.io/badge/Markdown-%23000000.svg?logo=markdown&logoColor=white)](#) [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)](#)
 
 ### Frameworks, Libraries & Tools  
-[![Anaconda](https://img.shields.io/badge/Anaconda-44A833?logo=anaconda&logoColor=fff)](#) [![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white)](#) [![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=fff)](#) [![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=fff)](#) [![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?logo=matplotlib&logoColor=fff)](#) [![Seaborn](https://img.shields.io/badge/Seaborn-4C4C9D?logo=seaborn&logoColor=white)](#) [![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?logo=scikit-learn&logoColor=white)](#)  [![Django](https://img.shields.io/badge/Django-%23092E20.svg?logo=django&logoColor=white)](#) [![Tkinter](https://img.shields.io/badge/Tkinter-306998?logo=python&logoColor=white)](#) [![Plotly](https://img.shields.io/badge/Plotly-3F4F75?logo=plotly&logoColor=white)](#) [![Pygame](https://img.shields.io/badge/Pygame-1C1C1C?logo=pygame&logoColor=white)](#) [![Arduino](https://img.shields.io/badge/Arduino-00979D?logo=arduino&logoColor=white)](#) 
+[![Anaconda](https://img.shields.io/badge/Anaconda-44A833?logo=anaconda&logoColor=fff)](#) [![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white)](#) [![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=fff)](#) [![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=fff)](#) [![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?logo=matplotlib&logoColor=fff)](#) [![Seaborn](https://img.shields.io/badge/Seaborn-4C4C9D?logo=seaborn&logoColor=white)](#) [![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?logo=scikit-learn&logoColor=white)](#)  [![Django](https://img.shields.io/badge/Django-%23092E20.svg?logo=django&logoColor=white)](#) [![Arduino](https://img.shields.io/badge/Arduino-00979D?logo=arduino&logoColor=white)](#) 
 
 ### DevOps Tools  
-[![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff)](#) [![Windows Terminal](https://img.shields.io/badge/Windows%20Terminal-111111?logo=windows-terminal&logoColor=white)](#) [![CMD](https://img.shields.io/badge/CMD-0078D6)](#) <!-- [![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff)](#) [![Jenkins](https://img.shields.io/badge/Jenkins-D24939?logo=jenkins&logoColor=white)](#) -->
+[![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff)](#) [![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff)](#) [![Windows Terminal](https://img.shields.io/badge/Windows%20Terminal-111111?logo=windows-terminal&logoColor=white)](#) [![CMD](https://img.shields.io/badge/CMD-0078D6)](#) [![Bash](https://img.shields.io/badge/Bash-4EAA25?logo=gnu-bash&logoColor=white)](#) <!-- [![Jenkins](https://img.shields.io/badge/Jenkins-D24939?logo=jenkins&logoColor=white)](#) -->
 
 ### Databases  
 [![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=fff)](#) [![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?logo=mongodb&logoColor=white)](#)
@@ -40,39 +40,28 @@
 ## 🛠️ Specialized Tools
 
 ### AI/ML Tools  
-[![ChatGPT](https://img.shields.io/badge/ChatGPT-74aa9c?logo=openai&logoColor=white)](#) [![Claude](https://img.shields.io/badge/Claude-FFCC00?logo=anthropic&logoColor=black)](#) [![Google Gemini](https://img.shields.io/badge/Google%20Gemini-886FBF?logo=googlegemini&logoColor=fff)](#) [![Copilot](https://img.shields.io/badge/Copilot-6e5494?logo=github-copilot&logoColor=white)](#) [![GrokAI](https://img.shields.io/badge/GrokAI-4B0082?logo=grokai&logoColor=white)](#) [![Blackbox AI](https://img.shields.io/badge/Blackbox%20AI-000000?logo=github&logoColor=white)](#) [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?logo=huggingface&logoColor=000)](#) [![Perplexity](https://img.shields.io/badge/Perplexity-FF4500?logo=chatgpt&logoColor=white)](#)
+[![ChatGPT](https://img.shields.io/badge/ChatGPT-74aa9c?logo=openai&logoColor=white)](#) [![Claude](https://img.shields.io/badge/Claude-FFCC00?logo=anthropic&logoColor=black)](#) [![Google Gemini](https://img.shields.io/badge/Google%20Gemini-886FBF?logo=googlegemini&logoColor=fff)](#) [![Copilot](https://img.shields.io/badge/Copilot-6e5494?logo=github-copilot&logoColor=white)](#) [![Perplexity](https://img.shields.io/badge/Perplexity-FF4500?logo=chatgpt&logoColor=white)](#) [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?logo=huggingface&logoColor=000)](#) 
 
 ### Design  
-[![DaVinci Resolve](https://img.shields.io/badge/DaVinci%20Resolve-FDBA0A?logo=davinci-resolve&logoColor=white)](#) [![Wondershare Filmora](https://img.shields.io/badge/Wondershare%20Filmora-0C3E8E?logo=wondershare-filmora&logoColor=fff)](#) [![Picsart](https://img.shields.io/badge/Picsart-FF0066?logo=picsart&logoColor=fff)](#) [![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?&logo=canva&logoColor=white)](#) [![Adobe Lightroom](https://img.shields.io/badge/Adobe%20Lightroom-31A8FF?logo=adobe-lightroom)](#) [![GIMP](https://img.shields.io/badge/GIMP-5C5C5C?logo=gimp&logoColor=white)](#) [![Adobe Photoshop](https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?logo=adobe-photoshop)](#) [![draw.io](https://img.shields.io/badge/draw.io-FF9900?logo=diagrams.net&logoColor=white)](#)
+[![DaVinci Resolve](https://img.shields.io/badge/DaVinci%20Resolve-FDBA0A?logo=davinci-resolve&logoColor=white)](#) [![Adobe Lightroom](https://img.shields.io/badge/Adobe%20Lightroom-31A8FF?logo=adobe-lightroom&logoColor=white)](#) [![Adobe Photoshop](https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?logo=adobe-photoshop&logoColor=white)](#) [![Lightroom Classic](https://img.shields.io/badge/Lightroom%20Classic-0A66C2?logo=adobe-lightroom&logoColor=white)](#) [![Wondershare Filmora](https://img.shields.io/badge/Wondershare%20Filmora-0C3E8E?logo=wondershare-filmora&logoColor=fff)](#) [![Picsart](https://img.shields.io/badge/Picsart-FF0066?logo=picsart&logoColor=fff)](#) [![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?&logo=canva&logoColor=white)](#) [![Excalidraw](https://img.shields.io/badge/Excalidraw-1F1F1F?logo=excalidraw&logoColor=white)](#) [![GIMP](https://img.shields.io/badge/GIMP-5C5C5C?logo=gimp&logoColor=white)](#) [![draw.io](https://img.shields.io/badge/draw.io-FF9900?logo=diagrams.net&logoColor=white)](#)
+
+
 
 ### Documentation 
-[![GitHub](https://img.shields.io/badge/GitHub%20-121013?logo=github&logoColor=white)](#) [![Notion](https://img.shields.io/badge/Notion-000?logo=notion&logoColor=fff)](#) 
-
----
-
-## 🌟 Featured Projects
-### 🔗 [Attendance System](https://github.com/AdityaSah2030/Attendance-System.git)
-**Tech Stack**: Python, Tkinter, and Excel Automation  
-*A GUI-based system that creates class Excel sheets for recording attendance and updates them in the backend.*
-
-### 🔗 [Mini Projects Collection](https://github.com/AdityaSah2030/Mini-Projects.git)
-**Tech Stack**: Python  
-*Includes:*  
-- To-Do List  
-- BMI-BMR Calculator  
-- YouTube Manager  
-- Handling APIs  
-- Unit Converter  
-- GUI Notepad
-
-### 🔗 [Arduino Workshop: Line Follower Robot](https://github.com/AdityaSah2030/ArduinoWorkshop)
-**Tech Stack**: Arduino, C/C++  
-*A project built during an Arduino workshop featuring a line follower robot. It uses infrared sensors to detect the line and motor control algorithms for autonomous navigation.*
+[![GitHub](https://img.shields.io/badge/GitHub%20-121013?logo=github&logoColor=white)](https://github.com/adityasah2030) [![Notion](https://img.shields.io/badge/Notion-000?logo=notion&logoColor=fff)](https://notion.so/adityasah2030) [![Hashnode](https://img.shields.io/badge/Hashnode-2962FF?logo=hashnode&logoColor=white)](https://hashnode.com/@adityasah2030) [![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@adityasah2030)
 
 ---
 
 ## 🌐 Connect with Me
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white)](mailto:adityasah2030@gmail.com) [![LinkedIn](https://img.shields.io/badge/Linkedin-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adityasah2030) [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://www.github.com/AdityaSah2030) [![X](https://img.shields.io/badge/X-%23000000.svg?logo=x&logoColor=white)](https://twitter.com/adityasah2030) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=instagram&logoColor=white)](http://www.instagram.com/adityasah2030) [![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?logo=discord&logoColor=white)](https://discord.com/users/adityasah2030)  [![Spotify](https://img.shields.io/badge/Spotify-1DB954?logo=spotify&logoColor=white)](https://open.spotify.com/user/sa0e2nw40p74hkja276bduku8?si=giH7MLppQZ-XB-zM9hFxBg)  [![Peerlist](https://img.shields.io/badge/Peerlist-0A0A23?logo=peerlist&logoColor=white)](https://peerlist.io/adityasah2030) [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white)](https://t.me/adityasah2030) [![Microsoft Teams](https://img.shields.io/badge/Microsoft%20Teams-6264A7?logo=microsoft-teams&logoColor=white)](#) 
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white)](mailto:adityasah2030@gmail.com) [![LinkedIn](https://img.shields.io/badge/Linkedin-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adityasah2030) [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://www.github.com/AdityaSah2030) [![X](https://img.shields.io/badge/X-%23000000.svg?logo=x&logoColor=white)](https://twitter.com/adityasah2030) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=instagram&logoColor=white)](http://www.instagram.com/adityasah2030) [![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?logo=discord&logoColor=white)](https://discord.com/users/adityasah2030) [![Apple Music](https://img.shields.io/badge/Apple%20Music-FA243C?logo=applemusic&logoColor=white)](https://music.apple.com/profile/adityasah2030)
+ [![Spotify](https://img.shields.io/badge/Spotify-1DB954?logo=spotify&logoColor=white)](https://open.spotify.com/user/sa0e2nw40p74hkja276bduku8?si=giH7MLppQZ-XB-zM9hFxBg)  [![Peerlist](https://img.shields.io/badge/Peerlist-0A0A23?logo=peerlist&logoColor=white)](https://peerlist.io/adityasah2030) [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white)](https://t.me/adityasah2030) [![Microsoft Teams](https://img.shields.io/badge/Microsoft%20Teams-6264A7?logo=microsoft-teams&logoColor=white)](#) 
+
+---
+
+## 📊 GitHub Stats
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=AdityaSah2030&layout=compact&theme=radical)  
+![GitHub Streak](https://streak-stats.demolab.com?user=AdityaSah2030&theme=radical&hide_border=true&border_radius=8)  
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=AdityaSah2030&show_icons=true&theme=radical)
 
 ---
 
