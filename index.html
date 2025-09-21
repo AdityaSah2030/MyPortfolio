@@ -275,44 +275,51 @@ It uses infrared sensors to detect the line and motor control algorithms for aut
 
         // Enhanced download function for mobile compatibility
         function downloadResume() {
-            const githubRawUrl = 'https://github.com/AdityaSah2030/MyPortfolio/raw/main/Resume.pdf';
-            const localUrl = 'Resume.pdf'; // Fallback to local file
+            const githubRawUrl = 'https://github.com/AdityaSah2030/MyPortfolio/raw/main/Aditya_Kumar_Sah_Resume.pdf';
+            const localUrl = 'Aditya_Kumar_Sah_Resume.pdf';
             
-            // Try local file first (for when site is hosted with the PDF file)
-            const tempLink = document.createElement('a');
-            tempLink.style.display = 'none';
-            document.body.appendChild(tempLink);
+            // Check if we're on mobile
+            const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
             
-            // First attempt: try local file
-            tempLink.href = localUrl;
-            tempLink.download = 'Aditya_Sah_Resume.pdf';
-            
-            try {
-                tempLink.click();
+            if (isMobile) {
+                // For mobile: direct navigation to force download
+                window.location.href = githubRawUrl;
+            } else {
+                // For desktop: try local file first, then GitHub as fallback
+                const tempLink = document.createElement('a');
+                tempLink.style.display = 'none';
+                tempLink.download = 'Aditya_Kumar_Sah_Resume.pdf';
+                document.body.appendChild(tempLink);
                 
-                // If local file doesn't work, try GitHub raw URL
-                setTimeout(() => {
-                    const githubLink = document.createElement('a');
-                    githubLink.href = githubRawUrl;
-                    githubLink.download = 'Aditya_Sah_Resume.pdf';
-                    githubLink.target = '_blank'; // Open in new tab as fallback
-                    githubLink.style.display = 'none';
-                    document.body.appendChild(githubLink);
-                    githubLink.click();
-                    document.body.removeChild(githubLink);
-                }, 500);
-                
-            } catch (error) {
-                // If both fail, open GitHub raw URL in new tab
-                window.open(githubRawUrl, '_blank');
+                // Test if local file exists
+                fetch(localUrl, { method: 'HEAD' })
+                    .then(response => {
+                        if (response.ok) {
+                            // Local file exists, use it
+                            tempLink.href = localUrl;
+                            tempLink.click();
+                        } else {
+                            // Local file doesn't exist, use GitHub
+                            tempLink.href = githubRawUrl;
+                            tempLink.target = '_blank';
+                            tempLink.click();
+                        }
+                    })
+                    .catch(() => {
+                        // Fallback to GitHub if fetch fails
+                        tempLink.href = githubRawUrl;
+                        tempLink.target = '_blank';
+                        tempLink.click();
+                    })
+                    .finally(() => {
+                        // Clean up
+                        setTimeout(() => {
+                            if (document.body.contains(tempLink)) {
+                                document.body.removeChild(tempLink);
+                            }
+                        }, 1000);
+                    });
             }
-            
-            // Clean up
-            setTimeout(() => {
-                if (document.body.contains(tempLink)) {
-                    document.body.removeChild(tempLink);
-                }
-            }, 1000);
         }
 
         // Close mobile nav when clicking on a link
