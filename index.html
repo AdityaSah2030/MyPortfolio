@@ -275,30 +275,44 @@ It uses infrared sensors to detect the line and motor control algorithms for aut
 
         // Enhanced download function for mobile compatibility
         function downloadResume() {
-            const resumeUrl = 'https://github.com/AdityaSah2030/MyPortfolio/raw/main/Resume.pdf';
+            const githubRawUrl = 'https://github.com/AdityaSah2030/MyPortfolio/raw/main/Resume.pdf';
+            const localUrl = 'Resume.pdf'; // Fallback to local file
             
-            // Create a temporary anchor element
+            // Try local file first (for when site is hosted with the PDF file)
             const tempLink = document.createElement('a');
-            tempLink.href = resumeUrl;
-            tempLink.download = 'Aditya_Sah_Resume.pdf'; // Explicit filename
             tempLink.style.display = 'none';
-            
-            // Add to DOM, click, and remove
             document.body.appendChild(tempLink);
             
-            // For mobile compatibility, use a small delay
-            setTimeout(() => {
+            // First attempt: try local file
+            tempLink.href = localUrl;
+            tempLink.download = 'Aditya_Sah_Resume.pdf';
+            
+            try {
                 tempLink.click();
                 
-                // Fallback for mobile browsers that don't support download attribute
+                // If local file doesn't work, try GitHub raw URL
                 setTimeout(() => {
-                    // If download didn't work, open in new tab
-                    if (navigator.userAgent.match(/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i)) {
-                        window.open(resumeUrl, '_blank');
-                    }
+                    const githubLink = document.createElement('a');
+                    githubLink.href = githubRawUrl;
+                    githubLink.download = 'Aditya_Sah_Resume.pdf';
+                    githubLink.target = '_blank'; // Open in new tab as fallback
+                    githubLink.style.display = 'none';
+                    document.body.appendChild(githubLink);
+                    githubLink.click();
+                    document.body.removeChild(githubLink);
+                }, 500);
+                
+            } catch (error) {
+                // If both fail, open GitHub raw URL in new tab
+                window.open(githubRawUrl, '_blank');
+            }
+            
+            // Clean up
+            setTimeout(() => {
+                if (document.body.contains(tempLink)) {
                     document.body.removeChild(tempLink);
-                }, 100);
-            }, 100);
+                }
+            }, 1000);
         }
 
         // Close mobile nav when clicking on a link
