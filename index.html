@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aditya Sah - Portfolio</title>
+    <meta name="description" content="Portfolio of Aditya Sah, a passionate tech enthusiast specializing in AI/ML, Python, C++, and IoT.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -11,49 +12,44 @@
     <header>
         <div class="container header-content">
             <div class="logo">
-                <h1>My Portfolio</h1>
+                <h1 id="nav-name">Aditya Sah<span style="color: var(--accent)">.</span></h1>
             </div>
-            <button class="nav-toggle">
-                <i class="fas fa-bars"></i> 
-            </button>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#interests">Interests</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="nav-controls">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="nav-toggle" aria-label="Toggle Navigation">
+                    <i class="fas fa-bars"></i> 
+                </button>
+            </div>
         </div>
     </header>
 
     <section id="home" class="hero">
         <div class="container hero-container">
-            <div class="hero-content">
-                <h2>Hi!
-I'm <span class="highlighted">Aditya Sah</span></h2>
-                <h2>A Passionate Tech Enthusiast</h2>
-                <div class="mobile-content-boxes">
-                    <div class="mobile-box quote-box">
-                        <p>"I believe in the power of technology to bridge gaps and create meaningful solutions!"</p>
-                    </div>
-                </div>
-                <div class="desktop-content">
-                    <p>"I believe in the power of technology to bridge gaps and create meaningful solutions!"</p>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn">Get In Touch</a>
-                        <button onclick="downloadResume()" class="btn btn-secondary">Download Resume</button>
-                    </div>
+            <div class="hero-image fade-in">
+                <div class="hero-image-card">
+                    <img src="Assets/dp3.jpg" alt="Profile Picture">
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="hero-image-card">
-                    <img src="dp2.png" alt="Aditya Sah">
-                </div>
-                <div class="hero-buttons mobile-buttons">
-                    <a href="#contact" class="btn">Get In Touch</a>
-                    <button onclick="downloadResume()" class="btn btn-secondary">Download Resume</button>
+            <div class="hero-content fade-in">
+                <p class="tagline" id="hero-tagline"></p>
+                <h2 class="hero-title" id="hero-name"></h2>
+                <h3 class="hero-role" id="hero-role"></h3>
+                <p class="hero-description" id="hero-description"></p>
+                <div class="hero-buttons">
+                    <button onclick="downloadResume()" class="btn">View Resume</button>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
                 </div>
             </div>
         </div>
@@ -62,32 +58,8 @@ I'm <span class="highlighted">Aditya Sah</span></h2>
     <section id="about" class="about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-card">
-                    <h3>📚 Currently Learning</h3>
-                    <ul>
-                        <li>Data Structures & Algorithms</li>
-                        <li>Exploratory Data Analysis (EDA)</li>
-                        <li>Deep Learning & Neural Networks</li>
-                        <li>Cloud Deployment of AI Models (FastAPI, Docker, AWS)</li>
-                    </ul>
-                </div>
-                <div class="about-card">
-                    <h3>🤝 Looking to Collaborate</h3>
-                    <ul>
-                        <li>AI/ML-driven real-world projects</li>
-                        <li>Open-source contributions in Python, C++, or Java</li>
-                        <li>IoT and Robotics (Arduino, Embedded Systems)</li>
-                    </ul>
-                </div>
-                <div class="about-card">
-                    <h3>💬 Ask Me About</h3>
-                    <ul>
-                        <li>Artificial Intelligence & Machine Learning</li>
-                        <li>Programming (Python, C++, SQL, Arduino)</li>
-                        <li>Tech Startups, Innovation & Business Applications</li>
-                    </ul>
-                </div>
+            <div class="about-content" id="about-content-container">
+                <!-- Injected via JS -->
             </div>
         </div>
     </section>
@@ -95,87 +67,8 @@ I'm <span class="highlighted">Aditya Sah</span></h2>
     <section id="skills" class="skills">
         <div class="container">
             <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-content">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skills-grid">
-                        <span class="skill-badge">Python</span>
-                        <span class="skill-badge">Java</span>
-                        <span class="skill-badge">C++</span>
-                        <span class="skill-badge">C</span>
-                        <span class="skill-badge">HTML</span>
-                        <span class="skill-badge">CSS</span>
-                        <span class="skill-badge">JavaScript</span>
-                        <span class="skill-badge">Bash</span>
-                        <span class="skill-badge">Markdown</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Frameworks, Libraries & Tools</h3>
-                    <div class="skills-grid">
-                        <span class="skill-badge">Anaconda</span>
-                        <span class="skill-badge">Jupyter</span>
-                        <span class="skill-badge">NumPy</span>
-                        <span class="skill-badge">Pandas</span>
-                        <span class="skill-badge">Matplotlib</span>
-                        <span class="skill-badge">Seaborn</span>
-                        <span class="skill-badge">Scikit-learn</span>
-                        <span class="skill-badge">Django</span>
-                        <span class="skill-badge">Arduino</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>DevOps Tools</h3>
-                    <div class="skills-grid">
-                        <span class="skill-badge">Git</span>
-                        <span class="skill-badge">Docker</span>
-                        <span class="skill-badge">Windows Terminal</span>
-                        <span class="skill-badge">CMD</span>
-                        <span class="skill-badge">Bash</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Databases</h3>
-                    <div class="skills-grid">
-                        <span class="skill-badge">MySQL</span>
-                        <span class="skill-badge">MongoDB</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>AI/ML Tools</h3>
-                    <div class="skills-grid">
-                        <span class="skill-badge">ChatGPT</span>
-                        <span class="skill-badge">Claude</span>
-                        <span class="skill-badge">Google Gemini</span>
-                        <span class="skill-badge">Copilot</span>
-                        <span class="skill-badge">Perplexity</span>
-                        <span class="skill-badge">Hugging Face</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Design</h3>
-                    <div class="skills-grid">
-                        <span class="skill-badge">DaVinci Resolve</span>
-                        <span class="skill-badge">Adobe Lightroom</span>
-                        <span class="skill-badge">Adobe Photoshop</span>
-                        <span class="skill-badge">Lightroom Classic</span>
-                        <span class="skill-badge">Wondershare Filmora</span>
-                        <span class="skill-badge">Picsart</span>
-                        <span class="skill-badge">Canva</span>
-                        <span class="skill-badge">Excalidraw</span>
-                        <span class="skill-badge">GIMP</span>
-                        <span class="skill-badge">draw.io</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Documentation</h3>
-                    <div class="skills-grid">
-                        <span class="skill-badge">GitHub</span>
-                        <span class="skill-badge">Notion</span>
-                        <span class="skill-badge">Hashnode</span>
-                        <span class="skill-badge">Medium</span>
-                    </div>
-                </div>
+            <div class="skills-content" id="skills-content-container">
+                <!-- Injected via JS -->
             </div>
         </div>
     </section>
@@ -183,27 +76,17 @@ I'm <span class="highlighted">Aditya Sah</span></h2>
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-content">
-                <div class="project-card">
-                    <h3>Face Recognition Attendance System</h3>
-                    <p class="tech-stack">Tech Stack: Python, OpenCV, face_recognition, JSON, Computer Vision</p>
-                    <p>An AI-powered attendance system developed during Smart India Hackathon that uses facial recognition to automatically mark student attendance.
-Features real-time face detection, encoding comparison, and JSON-based data storage with duplicate prevention.</p>
-                    <a href="https://github.com/AdityaSah2030/face-recognition" class="btn">View Project</a>
-                </div>
-                <div class="project-card">
-                    <h3>Mini Projects Collection</h3>
-                    <p class="tech-stack">Tech Stack: Python</p>
-                    <p>Collection of smaller projects including To-Do List, BMI-BMR Calculator, YouTube Manager, API Handling, Unit Converter, and GUI Notepad.</p>
-                    <a href="https://github.com/AdityaSah2030/Mini-Projects.git" class="btn">View Project</a>
-                </div>
-                <div class="project-card">
-                    <h3>Arduino Workshop: Line Follower Robot</h3>
-                    <p class="tech-stack">Tech Stack: Arduino, C/C++</p>
-                    <p>A project built during an Arduino workshop featuring a line follower robot.
-It uses infrared sensors to detect the line and motor control algorithms for autonomous navigation.</p>
-                    <a href="https://github.com/AdityaSah2030/ArduinoWorkshop" class="btn">View Project</a>
-                </div>
+            <div class="projects-content" id="projects-content-container">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <section id="interests" class="interests">
+        <div class="container">
+            <h2 class="section-title">Interests & Hobbies</h2>
+            <div class="interests-content" id="interests-content-container">
+                <!-- Injected via JS -->
             </div>
         </div>
     </section>
@@ -211,28 +94,11 @@ It uses infrared sensors to detect the line and motor control algorithms for aut
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <p>Feel free to reach out to me for collaboration or any questions.</p>
-                <p>Email: <a href="mailto:adityasah2030@gmail.com">adityasah2030@gmail.com</a></p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/adityasah2030" class="social-link" title="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://www.github.com/AdityaSah2030" class="social-link" title="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://x.com/adityasah2030" class="social-link" title="X (Twitter)">
-                        <i class="fa-brands fa-x-twitter"></i> 
-                    </a>
-                    <a href="http://www.instagram.com/adityasah2030" class="social-link" title="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://discord.com/users/adityasah2030" class="social-link" title="Discord">
-                        <i class="fab fa-discord"></i>
-                    </a>
-                    <a href="https://t.me/adityasah2030" class="social-link" title="Telegram">
-                        <i class="fab fa-telegram-plane"></i>
-                    </a>
+            <div class="contact-content fade-in">
+                <p id="contact-desc"></p>
+                <a href="" class="contact-email" id="contact-email-link"><span id="contact-email-text"></span></a>
+                <div class="social-links" id="social-links-container">
+                    <!-- Injected via JS -->
                 </div>
             </div>
         </div>
@@ -240,7 +106,7 @@ It uses infrared sensors to detect the line and motor control algorithms for aut
 
     <footer>
         <div class="container">
-            <p class="copyright"><strong>Copyright © 2025 Aditya Sah. All rights reserved.</strong></p> 
+            <p class="copyright">© 2026 <span id="footer-name"></span>. All rights reserved.</p> 
         </div>
     </footer>
 
@@ -248,101 +114,10 @@ It uses infrared sensors to detect the line and motor control algorithms for aut
         <i class="fas fa-arrow-up"></i>
     </div>
 
-    <script>
-        // Toggle navigation menu
-        const navToggle = document.querySelector('.nav-toggle');
-        const nav = document.querySelector('nav');
-        
-        navToggle.addEventListener('click', () => {
-            nav.classList.toggle('active');
-        });
+    <!-- Data Configuration File -->
+    <script src="portfolio-data.js"></script>
+    <!-- Main UI Logic -->
+    <script src="main.js"></script>
 
-        // Back to top button
-        const backToTop = document.querySelector('.back-to-top');
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTop.classList.add('show');
-            } else {
-                backToTop.classList.remove('show');
-            }
-        });
-
-        backToTop.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-        // Enhanced download function for mobile compatibility
-        function downloadResume() {
-            const githubRawUrl = 'https://github.com/AdityaSah2030/MyPortfolio/raw/main/Aditya_Kumar_Sah_Resume.pdf';
-            const localUrl = 'Aditya_Kumar_Sah_Resume.pdf';
-            
-            // Check if we're on mobile
-            const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-            
-            if (isMobile) {
-                // For mobile: direct navigation to force download
-                window.location.href = githubRawUrl;
-            } else {
-                // For desktop: try local file first, then GitHub as fallback
-                const tempLink = document.createElement('a');
-                tempLink.style.display = 'none';
-                tempLink.download = 'Aditya_Kumar_Sah_Resume.pdf';
-                document.body.appendChild(tempLink);
-                
-                // Test if local file exists
-                fetch(localUrl, { method: 'HEAD' })
-                    .then(response => {
-                        if (response.ok) {
-                            // Local file exists, use it
-                            tempLink.href = localUrl;
-                            tempLink.click();
-                        } else {
-                            // Local file doesn't exist, use GitHub
-                            tempLink.href = githubRawUrl;
-                            tempLink.target = '_blank';
-                            tempLink.click();
-                        }
-                    })
-                    .catch(() => {
-                        // Fallback to GitHub if fetch fails
-                        tempLink.href = githubRawUrl;
-                        tempLink.target = '_blank';
-                        tempLink.click();
-                    })
-                    .finally(() => {
-                        // Clean up
-                        setTimeout(() => {
-                            if (document.body.contains(tempLink)) {
-                                document.body.removeChild(tempLink);
-                            }
-                        }, 1000);
-                    });
-            }
-        }
-
-        // Close mobile nav when clicking on a link
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('click', () => {
-                nav.classList.remove('active');
-            });
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-    </script>
 </body>
 </html>

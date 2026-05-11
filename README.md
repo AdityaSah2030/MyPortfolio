@@ -70,4 +70,22 @@
 
 ---
 
-**Copyright © 2025 Aditya Sah. All rights reserved.**
+## 📂 Portfolio File Structure
+This repository contains my personal portfolio website, which is built with HTML, CSS, and Vanilla JavaScript. The codebase is organized cleanly for easy updates:
+
+- `index.html`: The main structure of the website.
+- `styles.css`: All the styling, responsive layouts, and light/dark theme variables.
+- `portfolio-data.js`: The central data hub where you can edit your profile information.
+- `main.js`: Contains all the logic for dynamic content injection, mobile menu toggling, and theme switching.
+- `Assets/`: Directory containing all media files including the profile picture (`dp3.jpg`) and downloadable resume (`Aditya_Kumar_Sah_Resume.pdf`).
+
+## 🛠️ How to Update Contents
+To easily update any information on the website without touching the HTML:
+1. Open the `portfolio-data.js` file in your preferred text editor.
+2. Find the relevant section you want to modify (e.g., `hero`, `about`, `skills`, `projects`, `interests`, or `contact`).
+3. Safely modify the text inside the quotation marks.
+4. Save the file and refresh your browser. The website will automatically update to reflect your changes!
+
+---
+
+**Copyright © 2026 Aditya Sah. All rights reserved.**
