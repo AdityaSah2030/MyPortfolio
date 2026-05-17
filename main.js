@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p class="tech-stack">${project.techStack}</p>
                 <p>${project.description}</p>
                 <div class="project-links">
-                    <a href="${project.link}" target="_blank" rel="noopener noreferrer" class="link-styled">${project.linkText} &rarr;</a>
+                    <a href="${project.link}" target="_blank" rel="noopener noreferrer" class="link-styled">${project.linkText} <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             `;
             projectsContainer.appendChild(projectCard);
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="interest-icon">${interest.icon}</div>
                 <h3>${interest.title}</h3>
                 <p>${interest.description}</p>
-                <a href="${interest.link}" target="_blank" rel="noopener noreferrer" class="link-styled">${interest.linkText} &rarr;</a>
+                <a href="${interest.link}" target="_blank" rel="noopener noreferrer" class="link-styled">${interest.linkText} <i class="fa-solid fa-arrow-right"></i></a>
             `;
             interestsContainer.appendChild(interestCard);
         });

@@ -69,30 +69,30 @@ const portfolioData = {
         {
             icon: "📷",
             title: "Photography",
-            description: "Capturing moments and exploring visual aesthetics through a lens.",
+            description: "Capturing moments where visions meet reality through the lens.",
             link: "https://adityasah2030.github.io/AestheticArchive/",
-            linkText: "Explore"
+            linkText: "View Gallery"
         },
         {
             icon: "♟️",
             title: "Chess",
-            description: "Strategic thinking and continuous learning on the 64 squares.",
+            description: "A calm battle of patience, patterns, and thoughtful moves.",
             link: "https://www.chess.com/member/adityasah2030",
-            linkText: "Challenge Me"
+            linkText: "Track Games"
         },
         {
             icon: "🎬",
             title: "Video Editing",
-            description: "Crafting narratives and dynamic visual experiences in post-production.",
-            link: "https://drive.google.com/drive/u/1/folders/1jNqhCuvktPpE_1oYLSF9c_cuwrkMMvMh",
-            linkText: "View Work"
+            description: "Beyond the timeline, where creativity flows through every cut.",
+            link: "https://adityasah2030.github.io/StillMotion/",
+            linkText: "Watch Stories"
         },
         {
             icon: "🎨",
             title: "Designing",
-            description: "Creating clean, engaging, and minimal designs for various mediums.",
-            link: "https://drive.google.com/drive/u/1/folders/14-MFXHFWOPalxzA-BovXRQ1TZmj-YmDR",
-            linkText: "View Designs"
+            description: "Designing experiences where creativity meets visual harmony.",
+            link: "https://adityasah2030.github.io/CanvasTheory/",
+            linkText: "Explore Visuals"
         }
     ],
     contact: {
