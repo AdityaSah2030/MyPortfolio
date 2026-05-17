@@ -9,27 +9,38 @@ const portfolioData = {
     about: {
         currentlyLearning: [
             "Data Structures & Algorithms",
-            "Exploratory Data Analysis (EDA)",
-            "Deep Learning & Neural Networks",
-            "Cloud Deployment of AI Models (FastAPI, Docker, AWS)"
+            "ML Model Training",
+            "Computer Architecture",
+            "Database Management Systems"
+        ],
+        exploring: [
+            "Data Analysis",
+            "System Design",
+            "DevOps"
         ],
         lookingToCollaborate: [
-            "AI/ML-driven real-world projects",
-            "Open-source contributions in Python, C++, or Java",
-            "IoT and Robotics (Arduino, Embedded Systems)"
+            "Python and Java projects",
+            "AI/ML applications",
+            "Embedded systems projects"
         ],
         askMeAbout: [
-            "Artificial Intelligence & Machine Learning",
-            "Programming (Python, C++, SQL, Arduino)",
-            "Tech Startups, Innovation & Business Applications"
+            "Programming and Technology Tools",
+            "Legacy Software and Modern Tech",
+            "Business Applications and Practical Use Cases"
         ]
     },
-    skills: {
-        "Programming Languages": ["Python", "Java", "C++", "C", "HTML", "CSS", "JavaScript", "Bash", "Markdown"],
-        "Libraries & Frameworks": ["NumPy", "Pandas", "Matplotlib", "Seaborn", "Scikit-learn", "Django", "Arduino"],
-        "Tools & DevOps": ["Git", "Docker", "Windows Terminal", "Anaconda", "Jupyter"],
+    technicalSkills: {
+        "Programming Languages": ["Python", "Java", "C++", "C"],
+        "Frameworks & Libraries": ["Anaconda", "Jupyter", "NumPy", "Pandas", "Matplotlib", "Seaborn", "Scikit-learn", "OpenCV", "Pydantic", "Django", "Flask", "FastAPI", "BeautifulSoup", "Arduino"],
+        "Development Tools": ["Git", "Docker", "Postman", "Bash", "Command Prompt", "Windows Terminal"],
         "Databases": ["MySQL", "MongoDB"],
-        "Design & Media": ["DaVinci Resolve", "Lightroom", "Photoshop", "Figma", "Canva"]
+        "Web Technologies": ["HTML", "CSS", "Markdown", "YAML", "JSON"]
+    },
+    specializedTools: {
+        "AI/ML Tools": ["Hugging Face", "Ollama", "ChatGPT", "Claude", "Google Gemini"],
+        "Self-Hosted Models": ["Gemma 3 4B", "Dolphin Llama3", "DeepSeek R1 8B", "Qwen2.5 Coder 7B"],
+        "Design & Media": ["DaVinci Resolve", "Adobe Lightroom", "Adobe Photoshop", "Wondershare Filmora", "Gamma", "Canva", "Excalidraw", "Eraser", "draw.io", "GIMP"],
+        "Documentation & Publishing": ["GitHub", "Notion", "Hashnode", "Medium"]
     },
     projects: [
         {

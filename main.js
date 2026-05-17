@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Hero section
     if (portfolioData.hero) {
-        document.getElementById('nav-name').textContent = portfolioData.hero.name || "";
+        document.getElementById('nav-name').innerHTML = `${portfolioData.hero.name || ""}<span style="color: var(--accent)">.</span>`;
         document.getElementById('hero-tagline').textContent = portfolioData.hero.tagline || "";
-        document.getElementById('hero-name').textContent = portfolioData.hero.name || "";
+        document.getElementById('hero-name').innerHTML = `${portfolioData.hero.name || ""}<span style="color: var(--accent)">.</span>`;
         document.getElementById('hero-role').textContent = portfolioData.hero.role || "";
         document.getElementById('hero-description').textContent = portfolioData.hero.description || "";
         document.getElementById('footer-name').textContent = portfolioData.hero.name || "";
@@ -17,8 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const aboutContainer = document.getElementById('about-content-container');
     if (portfolioData.about) {
         const aboutMapping = [
-            { title: "📚 Currently Learning", key: "currentlyLearning" },
-            { title: "🤝 Looking to Collaborate", key: "lookingToCollaborate" },
+            { title: "🌱 Currently Learning", key: "currentlyLearning" },
+            { title: "🔍 Exploring", key: "exploring" },
+            { title: "👯 Looking to Collaborate", key: "lookingToCollaborate" },
             { title: "💬 Ask Me About", key: "askMeAbout" }
         ];
 
@@ -34,9 +35,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Skills section
+    // Technical Skills section
     const skillsContainer = document.getElementById('skills-content-container');
-    if (portfolioData.skills) {
-        for (const [category, skillsList] of Object.entries(portfolioData.skills)) {
+    if (portfolioData.technicalSkills) {
+        for (const [category, skillsList] of Object.entries(portfolioData.technicalSkills)) {
             if (skillsList.length > 0) {
                 const skillCategory = document.createElement('div');
                 skillCategory.className = 'skill-category fade-in';
@@ -47,6 +49,24 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 `;
                 skillsContainer.appendChild(skillCategory);
+            }
+        }
+    }
+
+    // Specialized Tools section
+    const specializedToolsContainer = document.getElementById('specialized-tools-content-container');
+    if (specializedToolsContainer && portfolioData.specializedTools) {
+        for (const [category, toolsList] of Object.entries(portfolioData.specializedTools)) {
+            if (toolsList.length > 0) {
+                const toolCategory = document.createElement('div');
+                toolCategory.className = 'skill-category fade-in';
+                toolCategory.innerHTML = `
+                    <h3>${category}</h3>
+                    <div class="skills-grid">
+                        ${toolsList.map(tool => `<span class="skill-badge">${tool}</span>`).join('')}
+                    </div>
+                `;
+                specializedToolsContainer.appendChild(toolCategory);
             }
         }
     }
